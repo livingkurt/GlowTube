@@ -22,6 +22,7 @@
   <div class="ta-l">Song ID: <%= post.song_id %></div>
   <div class="jc-a">
     <div>Likes: <%= post.likes %></div>
+     <%= link_to "<button class='btn primary mb-10px'>Submit a Video</button>".html_safe, add_likes %>
     <div>Comments: <%= post.comments %></div>
   </div>
 <div><%= link_to 'Edit', edit_post_path(post) %></div>

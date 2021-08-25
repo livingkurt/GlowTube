@@ -3,11 +3,20 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
-import Rails from "@rails/ujs"
-import Turbolinks from "turbolinks"
-import * as ActiveStorage from "@rails/activestorage"
-import "channels"
+import Rails from '@rails/ujs';
+import Turbolinks from 'turbolinks';
+import * as ActiveStorage from '@rails/activestorage';
+import 'channels';
 
-Rails.start()
-Turbolinks.start()
-ActiveStorage.start()
+// import React from 'react';
+// import { render } from 'react-dom';
+// import Login from '../components/Login/Login';
+
+// document.addEventListener('DOMContentLoaded', () => {
+// 	const sso_node = document.getElementById('body');
+// 	render(<Login sso_enabled={JSON.parse(sso_node.getAttribute('value'))} />, document.getElementById('root'));
+// });
+
+Rails.start();
+Turbolinks.start();
+ActiveStorage.start();
