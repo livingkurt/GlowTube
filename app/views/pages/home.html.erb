@@ -1,0 +1,10 @@
+
+  <div class="w-194px">
+    <%= link_to "<button class='btn primary mb-10px'>Submit a Video</button>".html_safe, new_post_path %>
+  </div>
+ 
+    <% @posts.reverse.each_with_index do |post, index| %>
+     
+      <%= render partial: "partials/post", locals: { post: post, index: index, posts: @posts }%>
+    <% end %>
+  

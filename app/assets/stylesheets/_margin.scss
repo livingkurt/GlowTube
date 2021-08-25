@@ -1,0 +1,205 @@
+// Positive Margins
+
+// Margin px
+@for $i from 0 to 40 {
+	.m-#{$i}rem {
+		margin: $i + rem !important;
+	}
+}
+// Margin rem
+@for $i from 0 to 1000 {
+	.m-#{$i}px {
+		margin: $i + px !important;
+	}
+}
+// Top rem
+@for $i from 0 to 40 {
+	.mt-#{$i}rem {
+		margin-top: $i + rem !important;
+	}
+}
+// Top px
+@for $i from 0 to 1000 {
+	.mt-#{$i}px {
+		margin-top: $i + px !important;
+	}
+}
+// Bottom rem
+@for $i from 0 to 40 {
+	.mb-#{$i}rem {
+		margin-bottom: $i + rem !important;
+	}
+}
+// Bottom px
+@for $i from 0 to 1000 {
+	.mb-#{$i}px {
+		margin-bottom: $i + px !important;
+	}
+}
+// Left rem
+@for $i from 0 to 40 {
+	.ml-#{$i}rem {
+		margin-left: $i + rem !important;
+	}
+}
+// Left px
+@for $i from 0 to 1000 {
+	.ml-#{$i}px {
+		margin-left: $i + px !important;
+	}
+}
+// Right rem
+@for $i from 0 to 40 {
+	.mr-#{$i}rem {
+		margin-right: $i + rem !important;
+	}
+}
+// Right px
+@for $i from 0 to 1000 {
+	.mr-#{$i}px {
+		margin-right: $i + px !important;
+	}
+}
+// Horizontal rem
+@for $i from 0 to 40 {
+	.mh-#{$i}rem {
+		margin: 0 $i + rem !important;
+	}
+}
+// Horizontal px
+@for $i from 0 to 1000 {
+	.mh-#{$i}px {
+		margin: 0 $i + px !important;
+	}
+}
+// Vertical rem
+@for $i from 0 to 40 {
+	.mv-#{$i}rem {
+		margin: $i + rem 0;
+	}
+}
+// Vertical px
+@for $i from 0 to 1000 {
+	.mv-#{$i}px {
+		margin: $i + px 0;
+	}
+}
+// Negative Margins
+
+// - Top rem
+@for $i from 0 to 40 {
+	.mt-n#{$i}rem {
+		margin-top: -$i + rem !important;
+	}
+}
+// - Top px
+@for $i from 0 to 1000 {
+	.mt-n#{$i}px {
+		margin-top: -$i + px !important;
+	}
+}
+// - Bottom rem
+@for $i from 0 to 40 {
+	.mb-n#{$i}rem {
+		margin-bottom: -$i + rem !important;
+	}
+}
+// - Bottom px
+@for $i from 0 to 1000 {
+	.mb-n#{$i}px {
+		margin-bottom: -$i + px !important;
+	}
+}
+// - Left rem
+@for $i from 0 to 40 {
+	.ml-n#{$i}rem {
+		margin-left: -$i + rem !important;
+	}
+}
+// - Left px
+@for $i from 0 to 1000 {
+	.ml-n#{$i}px {
+		margin-left: -$i + px !important;
+	}
+}
+// - Right rem
+@for $i from 0 to 40 {
+	.mr-n#{$i}rem {
+		margin-right: -$i + rem !important;
+	}
+}
+// - Right px
+@for $i from 0 to 1000 {
+	.mr-n#{$i}px {
+		margin-right: -$i + px !important;
+	}
+}
+
+.m-none {
+	margin: 0;
+}
+.mt-none {
+	margin-top: 0;
+}
+.ml-none {
+	margin-left: 0;
+}
+.mr-none {
+	margin-right: 0;
+}
+.mb-none {
+	margin-bottom: 0;
+}
+
+.mh-none {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.mv-none {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.m-auto {
+	margin: auto;
+}
+
+.mv-auto {
+	margin: auto 0em;
+}
+
+// Horizontal auto
+
+.mh-auto {
+	margin: 0em auto;
+}
+// Vertical auto
+
+.mv-auto {
+	margin: auto 0em;
+}
+
+// Left auto
+
+.ml-auto {
+	margin-left: auto;
+}
+
+// Right auto
+
+.mr-auto {
+	margin-right: auto;
+}
+
+// Top auto
+
+.mt-auto {
+	margin-top: auto;
+}
+
+// Bottom auto
+
+.mb-auto {
+	margin-bottom: auto;
+}

@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Artist name</th>
+      <th>Email</th>
+      <th>Video</th>
+      <th>Description</th>
+      <th>Likes</th>
+      <th>Comments</th>
+      <th>Song ID</th>
+      <th>Website</th>
+      <th>Logo</th>
+      <th>Facebook</th>
+      <th>Instagram</th>
+      <th>Tiktok</th>
+      <th>Youtube</th>
+        <th>Pathname</th>
+      <th>Deleted</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.first_name %></td>
+        <td><%= post.last_name %></td>
+        <td><%= post.artist_name %></td>
+         <td><%= post.email %></td>
+        <td><%= post.video %></td>
+        <td><%= post.description %></td>
+        <td><%= post.likes %></td>
+        <td><%= post.comments %></td>
+        <td><%= post.song_id %></td>
+        <td><%= post.website %></td>
+        <td><%= post.logo %></td>
+        <td><%= post.facebook %></td>
+        <td><%= post.instagram %></td>
+        <td><%= post.tiktok %></td>
+        <td><%= post.youtube %></td>
+          <td><%= post.pathname %></td>
+        <td><%= post.deleted %></td>
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Post', new_post_path %>

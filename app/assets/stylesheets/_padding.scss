@@ -1,0 +1,152 @@
+// Padding px
+@for $i from 0 to 40 {
+	.p-#{$i}rem {
+		padding: $i + rem !important;
+	}
+}
+// Padding rem
+@for $i from 0 to 100 {
+	.p-#{$i}px {
+		padding: $i + px !important;
+	}
+}
+// Top rem
+@for $i from 0 to 40 {
+	.pt-#{$i}rem {
+		padding-top: $i + rem !important;
+	}
+}
+// Top px
+@for $i from 0 to 100 {
+	.pt-#{$i}px {
+		padding-top: $i + px !important;
+	}
+}
+// Bottom rem
+@for $i from 0 to 40 {
+	.pb-#{$i}rem {
+		padding-bottom: $i + rem !important;
+	}
+}
+// Bottom px
+@for $i from 0 to 100 {
+	.pb-#{$i}px {
+		padding-bottom: $i + px !important;
+	}
+}
+// Left rem
+@for $i from 0 to 40 {
+	.pl-#{$i}rem {
+		padding-left: $i + rem !important;
+	}
+}
+// Left px
+@for $i from 0 to 100 {
+	.pl-#{$i}px {
+		padding-left: $i + px !important;
+	}
+}
+// Right rem
+@for $i from 0 to 40 {
+	.pr-#{$i}rem {
+		padding-right: $i + rem !important;
+	}
+}
+// Right px
+@for $i from 0 to 100 {
+	.pr-#{$i}px {
+		padding-right: $i + px !important;
+	}
+}
+// Horizontal rem
+@for $i from 0 to 40 {
+	.ph-#{$i}rem {
+		padding: 0 $i + rem !important;
+	}
+}
+// Horizontal px
+@for $i from 0 to 100 {
+	.ph-#{$i}px {
+		padding: 0 $i + px !important;
+	}
+}
+// Vertical rem
+@for $i from 0 to 40 {
+	.pv-#{$i}rem {
+		padding: $i + rem 0;
+	}
+}
+// Vertical px
+@for $i from 0 to 100 {
+	.pv-#{$i}px {
+		padding: $i + px 0;
+	}
+}
+
+.p-none {
+	padding: 0;
+}
+.pt-none {
+	padding-top: 0;
+}
+.pl-none {
+	padding-left: 0;
+}
+.pr-none {
+	padding-right: 0;
+}
+.pb-none {
+	padding-bottom: 0;
+}
+
+.ph-none {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.pv-none {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.p-auto {
+	padding: auto;
+}
+.pv-auto {
+	padding: auto 0em;
+}
+
+// Horizontal auto
+
+.ph-auto {
+	padding: 0em auto;
+}
+// Vertical auto
+
+.pv-auto {
+	padding: auto 0em;
+}
+
+// Left auto
+
+.pl-auto {
+	padding-left: auto;
+}
+
+// Right auto
+
+.pr-auto {
+	padding-right: auto;
+}
+
+// Top auto
+
+.pt-auto {
+	padding-top: auto;
+}
+
+// Bottom auto
+
+.pb-auto {
+	padding-bottom: auto;
+}

@@ -1,0 +1,131 @@
+// @use '../abstracts' as *;
+
+// /* Sidebar */
+
+// .sidebar {
+// 	position: fixed;
+// 	transition: all .5s;
+// 	transform: translateX(-32rem);
+// 	width: 30rem;
+// 	// background-color: $theme_color_sidebar;
+// 	background: linear-gradient(180deg, $theme_color_sidebar 0%, #4d5061e6 100%);
+// 	height: 100%;
+// 	top: 129px;
+// 	padding: 0px;
+// 	z-index: 99;
+// 	box-shadow: $bs-deep;
+// }
+
+// // .hide-menu {
+// // 	// display: block !important;
+// // 	max-height: 1500px !important;
+// // }
+
+// .sidebar.open {
+// 	transform: translateX(0px);
+// }
+
+// .sidebar_dropdown {
+// 	position: relative;
+// }
+// .sidebar_dropdown_secondary {
+// 	position: relative;
+// }
+
+// .sidebar_dropdown_nested {
+// 	position: relative;
+// }
+
+// .sidebar_dropdown_nested_2 {
+// 	position: relative;
+// }
+
+// .sidebar_dropdown_container {
+// 	overflow: hidden;
+// 	height: auto;
+// 	max-height: 0px;
+// 	transition: all 0.5s;
+// 	left: 0;
+// 	list-style-type: none;
+// 	background-color: $theme_color_sidebar_primary;
+// 	margin: 0;
+// 	width: 100%;
+// }
+
+// .sidebar_dropdown_secondary_container {
+// 	overflow: hidden;
+// 	height: auto;
+// 	max-height: 0px;
+// 	transition: all 0.5s;
+// 	left: 0;
+// 	list-style-type: none;
+// 	background-color: $theme_color_sidebar_secondary;
+// 	margin: 0;
+// 	width: 100%;
+// }
+
+// .sidebar_dropdown_secondary_container:hover {
+// 	max-height: 600px;
+// }
+// .sidebar_dropdown_nested_container {
+// 	overflow: hidden;
+// 	height: auto;
+// 	max-height: 0px;
+// 	transition: all 0.5s;
+// 	left: 0;
+// 	list-style-type: none;
+// 	background-color: $theme_color_sidebar_nested;
+// 	margin: 0;
+// 	width: 100%;
+// }
+
+// .sidebar_dropdown_nested_container:hover {
+// 	max-height: 600px;
+// }
+
+// .sidebar_dropdown_nested_2_container {
+// 	overflow: hidden;
+// 	height: auto;
+// 	max-height: 0px;
+// 	transition: all 0.5s;
+// 	left: 0;
+// 	list-style-type: none;
+// 	background-color: $theme_color_sidebar_nested_2;
+// 	margin: 0;
+// 	width: 100%;
+// }
+
+// .sidebar_dropdown_nested_2_container:hover {
+// 	max-height: 600px;
+// }
+
+// .sidebar-btn-container {
+// 	display: flex;
+// 	// justify-content: space-between;
+// 	width: 100%;
+// }
+
+// .sidebar-btn.primary,
+// .sidebar-btn.secondary {
+// 	border-radius: 0px 0px 0px 1rem;
+// }
+
+// .sidebar-btn-dropdown {
+// 	background-color: $theme_color_primary;
+// 	color: $theme_color_phrase_font;
+
+// 	border: unset;
+// 	border-top: 1px solid white;
+// 	font-family: $paragraph_font;
+// 	border-radius: 1rem 0rem 0rem;
+// 	transition: all .5s ease;
+// 	// padding: 10px;
+// 	transform: rotate(180deg);
+// 	// height: 45px;
+// 	width: 20%;
+// }
+
+// .sidebar-btn-dropdown:hover {
+// 	box-shadow: $bs_deep;
+// 	background-color: $theme_color_primary_hover;
+// }

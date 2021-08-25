@@ -1,0 +1,47 @@
+@use 'sass:math';
+
+@for $i from 0 to 100 {
+	.w-#{$i}rem {
+		width: $i + rem !important;
+	}
+}
+@for $i from 0 to 1000 {
+	.w-#{$i}px {
+		width: $i + px !important;
+	}
+}
+@for $i from 0 to 101 {
+	.w-#{$i}vh {
+		width: $i + vh !important;
+	}
+}
+
+// @for $i from 0 to 100 {
+// 	.w-#{$i}per {
+// 		width: percentage($i, 100) !important;
+// 	}
+// }
+.w-100per {
+	width: 100% !important;
+}
+
+@for $i from 0 to 100 {
+	.max-w-#{$i}rem {
+		max-width: $i + rem !important;
+	}
+}
+@for $i from 0 to 2000 {
+	.max-w-#{$i}px {
+		max-width: $i + px !important;
+	}
+}
+@for $i from 0 to 100 {
+	.min-w-#{$i}rem {
+		min-width: $i + rem !important;
+	}
+}
+@for $i from 0 to 2000 {
+	.min-w-#{$i}px {
+		min-width: $i + px !important;
+	}
+}

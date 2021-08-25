@@ -1,0 +1,12 @@
+// Positive 100
+@for $i from 0 to 100 {
+	.z-pos-#{$i} {
+		box-shadow: $i !important;
+	}
+}
+// Negative 100
+@for $i from 0 to -100 {
+	.z-neg-#{$i} {
+		box-shadow: $i !important;
+	}
+}

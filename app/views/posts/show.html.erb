@@ -1,0 +1,89 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @post.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @post.last_name %>
+</p>
+
+<p>
+  <strong>Artist name:</strong>
+  <%= @post.artist_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @post.email %>
+</p>
+
+<p>
+  <strong>Video:</strong>
+  <%= @post.video %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @post.description %>
+</p>
+
+<p>
+  <strong>Likes:</strong>
+  <%= @post.likes %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @post.comments %>
+</p>
+
+<p>
+  <strong>Song:</strong>
+  <%= @post.song_id %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @post.website %>
+</p>
+
+<p>
+  <strong>Logo:</strong>
+  <%= @post.logo %>
+</p>
+
+<p>
+  <strong>Facebook:</strong>
+  <%= @post.facebook %>
+</p>
+
+<p>
+  <strong>Instagram:</strong>
+  <%= @post.instagram %>
+</p>
+
+<p>
+  <strong>Tiktok:</strong>
+  <%= @post.tiktok %>
+</p>
+
+<p>
+  <strong>Youtube:</strong>
+  <%= @post.youtube %>
+</p>
+
+<p>
+  <strong>Pathname:</strong>
+  <%= @post.pathname %>
+</p>
+
+<p>
+  <strong>Deleted:</strong>
+  <%= @post.deleted %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

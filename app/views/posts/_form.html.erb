@@ -1,0 +1,106 @@
+
+
+<%= form_with(model: post) do |form| %>
+  <% if post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+        <% post.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="field">
+    <%= form.label :first_name  %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :artist_name %>
+    <%= form.text_field :artist_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :video %>
+    <div class="w-100per jc-c ai-c">
+      https://www.youtube.com/embed/<%= form.text_field :video, placeholder: "WtMEHVNQXsM", :class => "w-120px"%>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :likes %>
+    <%= form.number_field :likes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comments %>
+    <%= form.text_field :comments %>
+  </div>
+
+  <div class="field">
+    <%= form.label :song_id %>
+    <%= form.text_field :song_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :website %>
+    <%= form.text_field :website %>
+  </div>
+
+  <div class="field">
+    <%= form.label :logo %>
+    <%= form.text_field :logo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :facebook, 'Facebook Link'%>
+    <%= form.text_field :facebook %>
+  </div>
+
+  <div class="field">
+    <%= form.label :instagram, 'Instagram Link' %>
+    <%= form.text_field :instagram %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tiktok, 'TikTok Link' %>
+    <%= form.text_field :tiktok %>
+  </div>
+
+  <div class="field">
+    <%= form.label :youtube, 'YouTube Link' %>
+    <%= form.text_field :youtube %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pathname %>
+    <%= form.text_field :pathname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :deleted %>
+    <%= form.check_box :deleted %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit :class => "btn primary w-100per"%>
+  </div>
+<% end %>

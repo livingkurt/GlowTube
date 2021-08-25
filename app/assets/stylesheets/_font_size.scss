@@ -1,0 +1,69 @@
+@use '../abstracts' as *;
+
+@for $i from 0 to 10 {
+	.fs-#{$i}rem {
+		font-size: \. + $i + rem !important;
+	}
+}
+@for $i from 0 to 10 {
+	.fs-#{$i}em {
+		font-size: $i + em !important;
+	}
+}
+
+@for $i from 0 to 100 {
+	.fs-#{$i}px {
+		font-size: $i + px !important;
+	}
+}
+
+@for $i from 0 to 1000 {
+	.fw-#{$i} {
+		font-weight: $i !important;
+	}
+}
+
+@for $i from 0 to 1000 {
+	.fstr-#{$i}px {
+		-webkit-text-stroke: $i + px white !important;
+	}
+}
+
+// .ff-h {
+// 	font-family: $heading_font;
+// }
+
+// .phrase_font {
+// 	font-family: $phrase_font;
+// }
+// .paragraph_font {
+// 	font-family: $paragraph_font;
+// 	-webkit-text-stroke: 1px white;
+// 	font-size: 1.7rem;
+// 	line-height: 3.4rem;
+// 	li {
+// 		line-height: 3.4rem;
+// 	}
+// }
+
+// .title_font {
+// 	font-family: $paragraph_font;
+// 	-webkit-text-stroke: 1px white;
+// }
+
+// .heading_font {
+// 	font-family: $heading_font;
+// }
+// .special_font {
+// 	font-family: $special_font;
+// }
+
+// .p_descriptions {
+// 	font-family: $paragraph_font;
+// }
+
+// h1,
+// h2,
+// h3 {
+// 	font-family: $heading_font;
+// }

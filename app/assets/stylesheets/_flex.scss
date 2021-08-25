@@ -1,0 +1,96 @@
+$justify: "c" center, "fs" flex-start, "fe" flex-end, "b" space-between, "a" space-around, "e" space-evenly;
+$align: "c" center, "fs" flex-start, "fe" flex-end, "b" stretch, "b" baseline;
+
+@each $i in $justify {
+	.jc-#{nth($i, 1)} {
+		display: flex !important;
+		justify-content: nth($i, 2) !important;
+	}
+}
+
+@each $i in $align {
+	.ai-#{nth($i, 1)} {
+		display: flex !important;
+		align-items: nth($i, 2) !important;
+	}
+}
+
+@for $i from 0 to 100 {
+	.g-#{$i}rem {
+		display: flex !important;
+		gap: $i + rem !important;
+	}
+}
+@for $i from 0 to 100 {
+	.g-#{$i}px {
+		display: flex !important;
+		gap: $i + px !important;
+	}
+}
+
+// @for $i from 0 to 100 {
+// 	.g-#{$i}px {
+// 		gap: $i + px !important;
+// 	}
+// }
+
+.row {
+	display: flex !important;
+	flex-direction: row;
+}
+.column {
+	display: flex !important;
+	flex-direction: column;
+}
+.none {
+	display: none !important;
+}
+.black {
+	display: block !important;
+}
+
+.wrap {
+	display: flex !important;
+	flex-wrap: wrap !important;
+}
+
+.flex-s-0 {
+	display: flex !important;
+	flex-shrink: 0 !important;
+}
+
+// .flex-auto {
+// 	display: flex !important;
+// 	flex: 0 1 auto !important;
+// }
+
+// // .flex-auto {
+// // 	display: flex !important;
+// // 	flex: 0 1 auto !important;
+// // }
+
+// @for $i from 0 to 100 {
+// 	.flex-#{$i}px {
+// 		display: flex !important;
+// 		gap: $i + px !important;
+// 	}
+// }
+
+// .flex {
+// 	display: flex;
+
+// 	$justify-positions: (s: flex-start, e: flex-end, c: center, a: space-around, b: space-between, e: space-evenly);
+// 	$align-positions: (s: flex-start, e: flex-end, c: center, s: stretch, b: baseline);
+
+// 	@mixin just-align($name,$prop,$arr) {
+// 		@each $mod, $dir in $arr {
+// 			#{$name}-#{$mod} {
+// 				display: flex;
+// 				#{$prop}: #{$dir};
+// 			}
+// 		}
+// 	}
+
+// 	@include just-align('ai','align-items', $align-positions);
+// 	@include just-align('jc','justify-content', $justify-positions);
+// }

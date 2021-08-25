@@ -1,0 +1,116 @@
+// Left px
+@for $i from 0 to 40 {
+	.left-#{$i}rem {
+		left: $i + rem !important;
+	}
+}
+// Left rem
+@for $i from 0 to 1000 {
+	.left-#{$i}px {
+		left: $i + px !important;
+	}
+}
+
+// Top rem
+@for $i from 0 to 40 {
+	.top-#{$i}rem {
+		top: $i + rem !important;
+	}
+}
+// Top px
+@for $i from 0 to 1000 {
+	.top-#{$i}px {
+		top: $i + px !important;
+	}
+}
+// Right rem
+@for $i from 0 to 40 {
+	.right-#{$i}rem {
+		right: $i + rem !important;
+	}
+}
+// Right px
+@for $i from 0 to 1000 {
+	.right-#{$i}px {
+		right: $i + px !important;
+	}
+}
+// Bottom rem
+@for $i from 0 to 40 {
+	.bottom-#{$i}rem {
+		bottom: $i + rem !important;
+	}
+}
+// Bottom px
+@for $i from 0 to 1000 {
+	.bottom-#{$i}px {
+		bottom: $i + px !important;
+	}
+}
+
+// - Left px
+@for $i from 0 to 40 {
+	.left-n#{$i}rem {
+		left: -$i + rem !important;
+	}
+}
+// - Left rem
+@for $i from 0 to 1000 {
+	.left-n#{$i}px {
+		left: -$i + px !important;
+	}
+}
+
+// Top rem
+@for $i from 0 to 40 {
+	.top-n#{$i}rem {
+		top: -$i + rem !important;
+	}
+}
+// Top px
+@for $i from 0 to 1000 {
+	.top-n#{$i}px {
+		top: -$i + px !important;
+	}
+}
+// Right rem
+@for $i from 0 to 40 {
+	.right-n#{$i}rem {
+		right: -$i + rem !important;
+	}
+}
+// Right px
+@for $i from 0 to 1000 {
+	.right-n#{$i}px {
+		right: -$i + px !important;
+	}
+}
+// Bottom rem
+@for $i from 0 to 40 {
+	.bottom-n#{$i}rem {
+		bottom: $i + rem !important;
+	}
+}
+// Bottom px
+@for $i from 0 to 1000 {
+	.bottom-n#{$i}px {
+		bottom: -$i + px !important;
+	}
+}
+
+.pos-rel {
+	position: relative !important;
+}
+
+.pos-abs {
+	position: absolute !important;
+}
+.pos-fix {
+	position: fixed !important;
+}
+.vis-hid {
+	visibility: hidden !important;
+}
+.overflow-s {
+	overflow-x: scroll !important;
+}

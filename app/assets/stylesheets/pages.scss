@@ -1,0 +1,63 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.content {
+	background: linear-gradient(180deg, #8a8a8a, #272727);
+	margin-top: 20px;
+	border-radius: 20px;
+	max-width: 1000px;
+	width: 100%;
+}
+
+// .socials {
+//   disp
+// }
+.icons {
+	font-size: 30px;
+	color: white;
+	margin: 1rem;
+}
+
+a {
+	color: transparent;
+	text-decoration: none;
+	color: white;
+}
+
+.iframe-container {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+	height: 0;
+
+	// max-width: 100rem;
+	// max-height: 50rem;
+}
+.iframe-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	// max-width: 100rem;
+	// max-height: 59rem;
+}
+.iframe-container-big {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+	height: 0;
+
+	// max-width: 100rem;
+	// max-height: 50rem;
+}
+.iframe-container-big iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 62%;
+	// max-width: 100rem;
+	// max-height: 59rem;
+}

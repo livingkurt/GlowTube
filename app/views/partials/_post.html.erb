@@ -1,0 +1,28 @@
+
+<div class="post ta-c mb-2rem" style=<%="background-color: hsl(#{360 / @posts.length + index}, 100%, 100%) "%>>
+  <h2 class="fs-20px w-100per jc-c mv-1rem"><%= post.first_name %> <%= post.last_name %> aka <%= post.artist_name %></h2>
+  <p class="w-100per ta-l mv-1rem"><%= post.description %></p>
+  <div class="iframe-container">
+  <iframe width="800" height="450" style="border-radius: 20px;" src=<%= "https://www.youtube.com/embed/#{post.video}?mute=1&showinfo=0&rel=0&autoplay=1&loop=1"  %> title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="socials jc-b w-20rem m-auto">
+    <% if (post.facebook.present?)  %>
+      <%= link_to "<div><i class='fab fa-facebook icons' ></i></div>".html_safe, "#{post.facebook}", :target => "_blank" %> 
+      <% end %>
+    <% if (post.instagram.present?)  %>
+      <%= link_to "<div><i class='fab fa-instagram icons' ></i></div>".html_safe, "#{post.instagram}", :target => "_blank" %> 
+      <% end %>
+    <% if (post.tiktok.present?)  %>
+        <%= link_to "<div><i class='fab fa-tiktok icons' ></i></div>".html_safe, "#{post.tiktok}", :target => "_blank" %> 
+      <% end %>
+    <% if (post.youtube.present?)  %>
+      <%= link_to "<div><i class='fab fa-youtube icons' ></i></div>".html_safe, "#{post.youtube}", :target => "_blank" %> 
+      <% end %>
+  </div>
+  <div class="ta-l">Song ID: <%= post.song_id %></div>
+  <div class="jc-a">
+    <div>Likes: <%= post.likes %></div>
+    <div>Comments: <%= post.comments %></div>
+  </div>
+<div><%= link_to 'Edit', edit_post_path(post) %></div>
+</div>

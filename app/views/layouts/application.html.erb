@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GlowTube</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/cc10a71280.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="w-100per max-w-1050px m-auto jc-b ai-c">
+        <%= link_to "<h1 class='fs-30px ta-l' style='color: white;'>GlowTube</h1>".html_safe, root_path %>
+        <p class="ta-c mv-1rem fs-14px">A place for Glovers, Flow and Visual Effects artists can share their YouTube videos to inspire of to be inspired.</p>
+      </div>
+    </header>
+    <main class="content jc-c column m-auto p-20px">
+      <%= yield %>
+    </main>
+  </body>
+</html>

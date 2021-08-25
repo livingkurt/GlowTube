@@ -1,0 +1,19 @@
+@for $i from 0 to 40 {
+	.br-#{$i}rem {
+		border-radius: $i + rem !important;
+	}
+}
+
+@for $i from 0 to 100 {
+	.br-#{$i}px {
+		border-radius: $i + px !important;
+	}
+}
+
+.bor-none {
+	border: none;
+}
+.bg-none {
+	background: none;
+}
+

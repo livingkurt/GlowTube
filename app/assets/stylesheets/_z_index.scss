@@ -1,0 +1,12 @@
+// Positive 100
+@for $i from 0 to 100 {
+	.z-pos-#{$i} {
+		z-index: $i !important;
+	}
+}
+// Negative 100
+@for $i from 0 to -100 {
+	.z-neg-#{$i} {
+		z-index: $i !important;
+	}
+}
